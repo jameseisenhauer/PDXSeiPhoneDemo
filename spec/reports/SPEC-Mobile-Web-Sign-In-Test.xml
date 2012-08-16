@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Mobile Web Sign-In Test" tests="2" time="8.671736" failures="0" errors="0" skipped="0">
+  <testcase name="Mobile Web Sign-In Test Can sign-in" time="5.466211">
+  </testcase>
+  <testcase name="Mobile Web Sign-In Test Can sign-out" time="2.567087">
+  </testcase>
+  <system-out>
+  </system-out>
+  <system-err>
+  </system-err>
+</testsuite>

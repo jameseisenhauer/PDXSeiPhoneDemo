@@ -1,0 +1,6 @@
+source "http://rubygems.org"
+gem "rake"
+gem "ci_reporter"
+gem "selenium-webdriver"
+gem "rspec",  "~>2.10.0"
+gem "parallel_tests"

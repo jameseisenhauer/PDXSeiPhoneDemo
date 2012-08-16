@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Mobile Web Motion Test" tests="5" time="21.037912" failures="0" errors="0" skipped="0">
+  <testcase name="Mobile Web Motion Test Can sign-in" time="4.566587">
+  </testcase>
+  <testcase name="Mobile Web Motion Test Can view Motion Track" time="1.562688">
+  </testcase>
+  <testcase name="Mobile Web Motion Test Can view Motion Compare" time="1.264981">
+  </testcase>
+  <testcase name="Mobile Web Motion Test Can view Motion Settings" time="1.973473">
+  </testcase>
+  <testcase name="Mobile Web Motion Test Can sign-out" time="2.574075">
+  </testcase>
+  <system-out>
+  </system-out>
+  <system-err>
+  </system-err>
+</testsuite>
