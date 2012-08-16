@@ -5,6 +5,7 @@ SITE = "http://qa.hubbubhealth.com"
 MSITE = "http://mqa.hubbubhealth.com"
 APISITE = "http://qa-api.hubbubhealth.com"
 HUB = "http://localhost:4444/wd/hub"
+SAUCEHUB = "http://jameseisenhauer:a980cf8f-95a8-44e6-9c1f-5c7e60f05ef5@ondemand.saucelabs.com:80/wd/hub"
 
 
 # check if browser enviorment set.  If not set it to firefox.  Needed for single execution of spec.  Might try to impliment rake task for this instead
@@ -24,19 +25,26 @@ RSpec.configure { |c|
   
   c.before(:all) {
 
-  	if sebrowser.to_sym == "firefox"
+    puts sebrowser  
 
-  	@driver = Selenium::WebDriver.for(:remote, :url => ::HUB, :desired_capabilities => sebrowser.to_sym)
-
-  	elseif sebrowser.to_sym == "iphone"
-
-  	@driver = Selenium::WebDriver.for(:remote, :url => ::HUB, :desired_capabilities => sebrowser.to_sym)
-
-  	elseif sebrowser.to_sym == "msauce"
-
-  	@driver = Selenium::WebDriver.for(:remote, :url => ::HUB, :desired_capabilities => sebrowser.to_sym)
-
+    case sebrowser 
+    when "firefox" then
+    	@driver = Selenium::WebDriver.for(:remote, :url => ::HUB, :desired_capabilities => sebrowser.to_sym)
+    when "iphone" then
+    	@driver = Selenium::WebDriver.for(:remote, :url => ::HUB, :desired_capabilities => sebrowser.to_sym)
+    when "msauce" then
+    	caps = Selenium::WebDriver::Remote::Capabilities.iphone
+    	caps[:tags] = "portrait"
+    	 caps[:name] = "Hubbub Mobile Web on iPhone Safari"
+    	@driver = Selenium::WebDriver.for(:remote, :url => ::SAUCEHUB, :desired_capabilities => caps)
+    when "wwwsauce" then
+    	caps = Selenium::WebDriver::Remote::Capabilities.firefox
+    	 caps[:name] = "Hubbub WWW on Firefox"
+    	@driver = Selenium::WebDriver.for(:remote, :url => ::SAUCEHUB, :desired_capabilities => caps)
+    else puts "no driver set"
     end
+ 
+  	
 
 
   }

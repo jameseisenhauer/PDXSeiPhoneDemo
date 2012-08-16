@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Mobile Web Sign-In Test" tests="2" time="8.671736" failures="0" errors="0" skipped="0">
-  <testcase name="Mobile Web Sign-In Test Can sign-in" time="5.466211">
+<testsuite name="Mobile Web Sign-In Test" tests="2" time="206.313428" failures="0" errors="2" skipped="0">
+  <testcase name="Mobile Web Sign-In Test Can sign-in" time="60.02462">
+    <failure type="Timeout::Error" message="Timeout::Error">
+Timeout::Error (Timeout::Error)
+Timeout::Error:
+Timeout::Error
+     ./spec/selenium/mobile/pages/signIn_page.rb:21:in `sign_in'
+     ./spec/selenium/mobile/accountSignIn_spec.rb:20:in `block (2 levels) in &lt;top (required)&gt;'    </failure>
   </testcase>
-  <testcase name="Mobile Web Sign-In Test Can sign-out" time="2.567087">
+  <testcase name="Mobile Web Sign-In Test Can sign-out" time="60.031319">
+    <failure type="Timeout::Error" message="Timeout::Error">
+Timeout::Error (Timeout::Error)
+Timeout::Error:
+Timeout::Error
+     ./spec/selenium/mobile/pages/hub_page.rb:12:in `hub_link'
+     ./spec/selenium/mobile/pages/hub_page.rb:31:in `sign_out'
+     ./spec/selenium/mobile/accountSignIn_spec.rb:29:in `block (2 levels) in &lt;top (required)&gt;'    </failure>
   </testcase>
   <system-out>
+msauce
   </system-out>
   <system-err>
   </system-err>

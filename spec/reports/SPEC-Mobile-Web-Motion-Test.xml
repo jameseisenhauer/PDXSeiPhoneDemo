@@ -1,16 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Mobile Web Motion Test" tests="5" time="21.037912" failures="0" errors="0" skipped="0">
-  <testcase name="Mobile Web Motion Test Can sign-in" time="4.566587">
+<testsuite name="Mobile Web Motion Test" tests="5" time="386.418015" failures="0" errors="5" skipped="0">
+  <testcase name="Mobile Web Motion Test Can sign-in" time="60.025387">
+    <failure type="Timeout::Error" message="Timeout::Error">
+Timeout::Error (Timeout::Error)
+Timeout::Error:
+Timeout::Error
+     ./spec/selenium/mobile/pages/signIn_page.rb:21:in `sign_in'
+     ./spec/selenium/mobile/motion_spec.rb:22:in `block (2 levels) in &lt;top (required)&gt;'    </failure>
   </testcase>
-  <testcase name="Mobile Web Motion Test Can view Motion Track" time="1.562688">
+  <testcase name="Mobile Web Motion Test Can view Motion Track" time="60.368839">
+    <failure type="Timeout::Error" message="Timeout::Error">
+Timeout::Error (Timeout::Error)
+Timeout::Error:
+Timeout::Error
+     ./spec/selenium/mobile/pages/hub_page.rb:18:in `motion_link'
+     ./spec/selenium/mobile/motion_spec.rb:28:in `block (2 levels) in &lt;top (required)&gt;'    </failure>
   </testcase>
-  <testcase name="Mobile Web Motion Test Can view Motion Compare" time="1.264981">
+  <testcase name="Mobile Web Motion Test Can view Motion Compare" time="60.023777">
+    <failure type="Timeout::Error" message="Timeout::Error">
+Timeout::Error (Timeout::Error)
+Timeout::Error:
+Timeout::Error
+     ./spec/selenium/mobile/pages/motion_page.rb:17:in `compare_link'
+     ./spec/selenium/mobile/motion_spec.rb:33:in `block (2 levels) in &lt;top (required)&gt;'    </failure>
   </testcase>
-  <testcase name="Mobile Web Motion Test Can view Motion Settings" time="1.973473">
+  <testcase name="Mobile Web Motion Test Can view Motion Settings" time="60.370258">
+    <failure type="Timeout::Error" message="Timeout::Error">
+Timeout::Error (Timeout::Error)
+Timeout::Error:
+Timeout::Error
+     ./spec/selenium/mobile/pages/motion_page.rb:23:in `settings_link'
+     ./spec/selenium/mobile/motion_spec.rb:38:in `block (2 levels) in &lt;top (required)&gt;'    </failure>
   </testcase>
-  <testcase name="Mobile Web Motion Test Can sign-out" time="2.574075">
+  <testcase name="Mobile Web Motion Test Can sign-out" time="60.025028">
+    <failure type="Timeout::Error" message="Timeout::Error">
+Timeout::Error (Timeout::Error)
+Timeout::Error:
+Timeout::Error
+     ./spec/selenium/mobile/pages/hub_page.rb:12:in `hub_link'
+     ./spec/selenium/mobile/pages/hub_page.rb:31:in `sign_out'
+     ./spec/selenium/mobile/motion_spec.rb:46:in `block (2 levels) in &lt;top (required)&gt;'    </failure>
   </testcase>
   <system-out>
+msauce
   </system-out>
   <system-err>
   </system-err>
