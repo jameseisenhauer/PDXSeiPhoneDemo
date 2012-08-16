@@ -4,7 +4,7 @@ require 'selenium-webdriver'
 SITE = "http://qa.hubbubhealth.com"
 MSITE = "http://mqa.hubbubhealth.com"
 APISITE = "http://qa-api.hubbubhealth.com"
-HUB = "http://10.65.192.65:4444/wd/hub"
+HUB = "http://localhost:4444/wd/hub"
 
 
 # check if browser enviorment set.  If not set it to firefox.  Needed for single execution of spec.  Might try to impliment rake task for this instead
