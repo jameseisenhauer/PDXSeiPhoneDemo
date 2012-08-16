@@ -25,4 +25,12 @@ task :mobile  => "ci:setup:rspec" do
    puts %x{parallel_rspec spec/selenium/mobile -n 6}
   end
 
+desc "Runs mobile web selenium tests on iphone in sauce labs"
+task :msauce  => "ci:setup:rspec" do
+   puts "$$$$ Running MOBILE selenium tests in Sauce $$$$$"
+   SEBROWSER_ENV = ENV['SEBROWSER_ENV'] = "msauce"
+   puts ENV['SEBROWSER_ENV']
+   puts %x{parallel_rspec spec/selenium/mobile -n 6}
+  end
+
 end

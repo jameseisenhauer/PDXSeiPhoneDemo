@@ -24,9 +24,20 @@ RSpec.configure { |c|
   
   c.before(:all) {
 
+  	if sebrowser.to_sym == "firefox"
+
   	@driver = Selenium::WebDriver.for(:remote, :url => ::HUB, :desired_capabilities => sebrowser.to_sym)
 
-  	
+  	elseif sebrowser.to_sym == "iphone"
+
+  	@driver = Selenium::WebDriver.for(:remote, :url => ::HUB, :desired_capabilities => sebrowser.to_sym)
+
+  	elseif sebrowser.to_sym == "msauce"
+
+  	@driver = Selenium::WebDriver.for(:remote, :url => ::HUB, :desired_capabilities => sebrowser.to_sym)
+
+    end
+
 
   }
 
