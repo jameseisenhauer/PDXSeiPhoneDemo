@@ -1,11 +1,11 @@
 require 'selenium-webdriver'
 
 # global vars for sites under test and selenium grid hub - maybe move to config file
-SITE = "http://qa.hubbubhealth.com"
-MSITE = "http://mqa.hubbubhealth.com"
-APISITE = "http://qa-api.hubbubhealth.com"
+SITE = "http://www.hubbubhealth.com"
+MSITE = "http://m.hubbubhealth.com"
+APISITE = "http://api.hubbubhealth.com"
 HUB = "http://localhost:4444/wd/hub"
-SAUCEHUB = "http://jameseisenhauer:a980cf8f-95a8-44e6-9c1f-5c7e60f05ef5@ondemand.saucelabs.com:80/wd/hub"
+SAUCEHUB = "http://xxxxxxx@ondemand.saucelabs.com:80/wd/hub"
 
 
 # check if browser enviorment set.  If not set it to firefox.  Needed for single execution of spec.  Might try to impliment rake task for this instead
