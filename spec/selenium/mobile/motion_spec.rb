@@ -19,7 +19,7 @@ describe "Mobile Web Motion Test" do
 #start tests here
 
 	it "Can sign-in" do
-	@signInPage.sign_in('hbhtst+hans@gmail.com','password')
+	@signInPage.sign_in('hbhtst+hans@gmail.com','passpass')
 	@hubPage.signOut_link.displayed?.should == true
 	end
 
